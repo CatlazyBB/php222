@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Backhehe.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 900px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.dashboard h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.welcome strong {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-section {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-section h3 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.form-group input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group select option {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-logout {
+    background: rgba(220, 53, 69, 0.8);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-logout:hover {
+    background: rgba(220, 53, 69, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.certificate {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+}
+
+.certificate::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+.certificate h3 {
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate .cert-text {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.certificate .cert-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #764ba2;
+    margin: 30px 0;
+    text-decoration: underline;
+    text-decoration-color: #667eea;
+}
+
+.certificate .cert-course {
+    font-size: 1.3em;
+    color: #667eea;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.certificate .cert-date {
+    font-size: 1em;
+    color: #666;
+    margin-top: 30px;
+}
+
+.certificate .cert-signature {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signature-box {
+    text-align: center;
+    flex: 1;
+}
+
+.signature-line {
+    border-top: 2px solid #333;
+    margin: 20px 20px 5px 20px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.decorative-border {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    height: 4px;
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .dashboard h2 {
+        font-size: 2em;
+    }
+    
+    .certificate-section {
+        padding: 20px;
+    }
+    
+    .certificate {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .certificate h3 {
+        font-size: 2em;
+    }
+    
+    .certificate .cert-name {
+        font-size: 1.5em;
+    }
+    
+    .certificate .cert-course {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px 2px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group select {
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .certificate .cert-signature {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
