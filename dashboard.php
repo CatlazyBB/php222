@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'ser/data.php';
+require_once 'data.php';
 
 if (!isset($_SESSION['username'])) {
     header('Location: index.php'); // diarahkan ke index.php (halaman login)
@@ -19,7 +19,7 @@ $user = mysqli_fetch_assoc($result);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Generator Sertifikat</title>
-    <link rel="stylesheet" href="lay/dashboard-style.css">
+    <link rel="stylesheet" href="dashboard-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
